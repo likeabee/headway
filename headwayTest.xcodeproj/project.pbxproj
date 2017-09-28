@@ -1,0 +1,1054 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032806A71F78D58F0026063A /* SliderGalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806A61F78D58F0026063A /* SliderGalleryController.swift */; };
+		032806AF1F78DEC60026063A /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806AD1F78DEC60026063A /* ImageHelper.swift */; };
+		032806B01F78DEC60026063A /* ImageVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806AE1F78DEC60026063A /* ImageVIewExtension.swift */; };
+		032806BF1F79E1D80026063A /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806BE1F79E1D80026063A /* homePageViewController.swift */; };
+		032806C21F7A29A60026063A /* feesPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806C11F7A29A60026063A /* feesPaymentViewController.swift */; };
+		032806C41F7A371E0026063A /* feesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806C31F7A371E0026063A /* feesDetailViewController.swift */; };
+		032806DA1F7B37930026063A /* 电费.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D51F7B37930026063A /* 电费.png */; };
+		032806DB1F7B37930026063A /* 水费.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D61F7B37930026063A /* 水费.png */; };
+		032806DC1F7B37930026063A /* 维修.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D71F7B37930026063A /* 维修.png */; };
+		032806DD1F7B37930026063A /* 物业费.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D81F7B37930026063A /* 物业费.png */; };
+		032806DE1F7B37930026063A /* 小区.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D91F7B37930026063A /* 小区.png */; };
+		032806E01F7B383F0026063A /* 其他.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806DF1F7B383F0026063A /* 其他.png */; };
+		032806E21F7B42AC0026063A /* TGDropBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806E11F7B42AC0026063A /* TGDropBoxView.swift */; };
+		032806E61F7B43890026063A /* paymentRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806E51F7B43890026063A /* paymentRecordViewController.swift */; };
+		032806EA1F7B4D2A0026063A /* ic_more_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806E91F7B4D2A0026063A /* ic_more_down.png */; };
+		032806ED1F7C8F440026063A /* personalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806EC1F7C8F440026063A /* personalViewController.swift */; };
+		032806FB1F7C985F0026063A /* personal_bg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 032806FA1F7C985F0026063A /* personal_bg.jpeg */; };
+		032806FD1F7C98C50026063A /* about_head_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806FC1F7C98C50026063A /* about_head_bg@2x.png */; };
+		032806FF1F7CDE830026063A /* personalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806FE1F7CDE830026063A /* personalHeaderView.swift */; };
+		032807011F7CE0CD0026063A /* personalHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032807001F7CE0CD0026063A /* personalHeaderView.xib */; };
+		03387AA91F6FA4E200DCF3AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387AA81F6FA4E200DCF3AE /* AppDelegate.swift */; };
+		03387AAB1F6FA4E200DCF3AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387AAA1F6FA4E200DCF3AE /* ViewController.swift */; };
+		03387AAE1F6FA4E200DCF3AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03387AAC1F6FA4E200DCF3AE /* Main.storyboard */; };
+		03387AB01F6FA4E200DCF3AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03387AAF1F6FA4E200DCF3AE /* Assets.xcassets */; };
+		03387AB31F6FA4E200DCF3AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03387AB11F6FA4E200DCF3AE /* LaunchScreen.storyboard */; };
+		03387ABE1F6FA4E300DCF3AE /* headwayTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387ABD1F6FA4E300DCF3AE /* headwayTestTests.swift */; };
+		03387AC91F6FA4E300DCF3AE /* headwayTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387AC81F6FA4E300DCF3AE /* headwayTestUITests.swift */; };
+		03387AD71F6FA68A00DCF3AE /* hwNavigationC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387AD61F6FA68A00DCF3AE /* hwNavigationC.swift */; };
+		038DF9E11F735876000CCC17 /* normal_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DD1F735876000CCC17 /* normal_default.png */; };
+		038DF9E21F735876000CCC17 /* owner_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DE1F735876000CCC17 /* owner_default.png */; };
+		038DF9E31F735876000CCC17 /* owner_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DF1F735876000CCC17 /* owner_selected.png */; };
+		038DF9E41F735876000CCC17 /* normal_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9E01F735876000CCC17 /* normal_selected.png */; };
+		038DF9E61F735B68000CCC17 /* businessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038DF9E51F735B68000CCC17 /* businessViewController.swift */; };
+		038DF9F21F739A1D000CCC17 /* 华元logo@180.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9EB1F739A1D000CCC17 /* 华元logo@180.png */; };
+		038DF9F31F739A1D000CCC17 /* 华元logo@87.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9EC1F739A1D000CCC17 /* 华元logo@87.png */; };
+		038DF9F41F739A1D000CCC17 /* 华元logo@120.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9ED1F739A1D000CCC17 /* 华元logo@120.png */; };
+		038DF9F51F739A1D000CCC17 /* 华元logo@40.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9EE1F739A1D000CCC17 /* 华元logo@40.png */; };
+		038DF9F61F739A1D000CCC17 /* 华元logo@58.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9EF1F739A1D000CCC17 /* 华元logo@58.png */; };
+		038DF9F71F739A1D000CCC17 /* 华元logo@60.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9F01F739A1D000CCC17 /* 华元logo@60.png */; };
+		038DF9F81F739A1D000CCC17 /* 华元logo@80.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9F11F739A1D000CCC17 /* 华元logo@80.png */; };
+		038DF9FE1F73A2DA000CCC17 /* 添加.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9FD1F73A2DA000CCC17 /* 添加.png */; };
+		03A60D3F1F73B27B00BB50C3 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A60D3D1F73B27B00BB50C3 /* Default-736h@3x.png */; };
+		03A60D401F73B27B00BB50C3 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A60D3E1F73B27B00BB50C3 /* Default-667h@2x.png */; };
+		03A60D421F73B3D200BB50C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A60D411F73B3D200BB50C3 /* Default-568h@2x.png */; };
+		03A60D441F73B65000BB50C3 /* r55.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A60D431F73B65000BB50C3 /* r55.png */; };
+		03A60D461F73C02C00BB50C3 /* delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A60D451F73C02C00BB50C3 /* delay.swift */; };
+		03A60D481F74E8D300BB50C3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A60D471F74E8D200BB50C3 /* SwiftyJSON.swift */; };
+		03A654AA1F70A6E400853303 /* BGimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03A654A91F70A6E400853303 /* BGimage.jpeg */; };
+		03A654B11F70B08C00853303 /* headwayLogo金.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A654AD1F70B08C00853303 /* headwayLogo金.png */; };
+		03A654B41F70B08C00853303 /* headwayLogo白.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A654B01F70B08C00853303 /* headwayLogo白.png */; };
+		03A654B61F70B10000853303 /* headwayLogo灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A654B51F70B10000853303 /* headwayLogo灰.png */; };
+		03A654BD1F70B9B600853303 /* StrokeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654BC1F70B9B500853303 /* StrokeAnimator.swift */; };
+		03A654C21F70C6D500853303 /* naghtsky.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A654C11F70C6D500853303 /* naghtsky.png */; };
+		03A654CB1F70E33F00853303 /* launchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654C91F70E33F00853303 /* launchScreenViewController.swift */; };
+		03A654CC1F70E33F00853303 /* launchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A654CA1F70E33F00853303 /* launchScreenViewController.xib */; };
+		03A654CE1F71035500853303 /* chooseIdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654CD1F71035500853303 /* chooseIdentityViewController.swift */; };
+		03A654D11F7109A100853303 /* verificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654D01F7109A100853303 /* verificationViewController.swift */; };
+		03A654D81F71125A00853303 /* randomVerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654D71F71125A00853303 /* randomVerificationCode.swift */; };
+		03A654DA1F71F97400853303 /* buttonCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654D91F71F97400853303 /* buttonCount.swift */; };
+		03A654DE1F724D0A00853303 /* ownerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654DD1F724D0900853303 /* ownerViewController.swift */; };
+		03B2046E1F7CFA7700C3E5A2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B204611F7CFA3400C3E5A2 /* Alamofire.framework */; };
+		03B2046F1F7CFA7700C3E5A2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03B204611F7CFA3400C3E5A2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03B204761F7CFAD200C3E5A2 /* 密码@32.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B204721F7CFAD200C3E5A2 /* 密码@32.png */; };
+		03B204771F7CFAD200C3E5A2 /* 密码@64.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B204731F7CFAD200C3E5A2 /* 密码@64.png */; };
+		03B204781F7CFAD200C3E5A2 /* 账号@32.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B204741F7CFAD200C3E5A2 /* 账号@32.png */; };
+		03B204791F7CFAD200C3E5A2 /* 账号@64.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B204751F7CFAD200C3E5A2 /* 账号@64.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03387ABA1F6FA4E300DCF3AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03387A9D1F6FA4E200DCF3AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03387AA41F6FA4E200DCF3AE;
+			remoteInfo = headwayTest;
+		};
+		03387AC51F6FA4E300DCF3AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03387A9D1F6FA4E200DCF3AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03387AA41F6FA4E200DCF3AE;
+			remoteInfo = headwayTest;
+		};
+		03B204601F7CFA3400C3E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		03B204621F7CFA3400C3E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		03B204641F7CFA3400C3E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		03B204661F7CFA3400C3E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		03B204681F7CFA3400C3E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		03B2046A1F7CFA3400C3E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		03B2046C1F7CFA3400C3E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		03B204701F7CFA7700C3E5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		032806A11F788B5D0026063A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03B2046F1F7CFA7700C3E5A2 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		032806A61F78D58F0026063A /* SliderGalleryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderGalleryController.swift; sourceTree = "<group>"; };
+		032806AD1F78DEC60026063A /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		032806AE1F78DEC60026063A /* ImageVIewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVIewExtension.swift; sourceTree = "<group>"; };
+		032806BE1F79E1D80026063A /* homePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
+		032806C11F7A29A60026063A /* feesPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feesPaymentViewController.swift; sourceTree = "<group>"; };
+		032806C31F7A371E0026063A /* feesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feesDetailViewController.swift; sourceTree = "<group>"; };
+		032806D51F7B37930026063A /* 电费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电费.png"; sourceTree = "<group>"; };
+		032806D61F7B37930026063A /* 水费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "水费.png"; sourceTree = "<group>"; };
+		032806D71F7B37930026063A /* 维修.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "维修.png"; sourceTree = "<group>"; };
+		032806D81F7B37930026063A /* 物业费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "物业费.png"; sourceTree = "<group>"; };
+		032806D91F7B37930026063A /* 小区.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "小区.png"; sourceTree = "<group>"; };
+		032806DF1F7B383F0026063A /* 其他.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他.png"; sourceTree = "<group>"; };
+		032806E11F7B42AC0026063A /* TGDropBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGDropBoxView.swift; sourceTree = "<group>"; };
+		032806E51F7B43890026063A /* paymentRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentRecordViewController.swift; sourceTree = "<group>"; };
+		032806E91F7B4D2A0026063A /* ic_more_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_more_down.png; sourceTree = "<group>"; };
+		032806EC1F7C8F440026063A /* personalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = personalViewController.swift; sourceTree = "<group>"; };
+		032806FA1F7C985F0026063A /* personal_bg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = personal_bg.jpeg; sourceTree = "<group>"; };
+		032806FC1F7C98C50026063A /* about_head_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about_head_bg@2x.png"; sourceTree = "<group>"; };
+		032806FE1F7CDE830026063A /* personalHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = personalHeaderView.swift; sourceTree = "<group>"; };
+		032807001F7CE0CD0026063A /* personalHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personalHeaderView.xib; sourceTree = "<group>"; };
+		03387AA51F6FA4E200DCF3AE /* headwayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = headwayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03387AA81F6FA4E200DCF3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03387AAA1F6FA4E200DCF3AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03387AAD1F6FA4E200DCF3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03387AAF1F6FA4E200DCF3AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03387AB21F6FA4E200DCF3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03387AB41F6FA4E200DCF3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03387AB91F6FA4E300DCF3AE /* headwayTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = headwayTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03387ABD1F6FA4E300DCF3AE /* headwayTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headwayTestTests.swift; sourceTree = "<group>"; };
+		03387ABF1F6FA4E300DCF3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03387AC41F6FA4E300DCF3AE /* headwayTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = headwayTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03387AC81F6FA4E300DCF3AE /* headwayTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headwayTestUITests.swift; sourceTree = "<group>"; };
+		03387ACA1F6FA4E300DCF3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03387AD61F6FA68A00DCF3AE /* hwNavigationC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hwNavigationC.swift; sourceTree = "<group>"; };
+		038DF9DD1F735876000CCC17 /* normal_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal_default.png; sourceTree = "<group>"; };
+		038DF9DE1F735876000CCC17 /* owner_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owner_default.png; sourceTree = "<group>"; };
+		038DF9DF1F735876000CCC17 /* owner_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owner_selected.png; sourceTree = "<group>"; };
+		038DF9E01F735876000CCC17 /* normal_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal_selected.png; sourceTree = "<group>"; };
+		038DF9E51F735B68000CCC17 /* businessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = businessViewController.swift; sourceTree = "<group>"; };
+		038DF9EB1F739A1D000CCC17 /* 华元logo@180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "华元logo@180.png"; sourceTree = "<group>"; };
+		038DF9EC1F739A1D000CCC17 /* 华元logo@87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "华元logo@87.png"; sourceTree = "<group>"; };
+		038DF9ED1F739A1D000CCC17 /* 华元logo@120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "华元logo@120.png"; sourceTree = "<group>"; };
+		038DF9EE1F739A1D000CCC17 /* 华元logo@40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "华元logo@40.png"; sourceTree = "<group>"; };
+		038DF9EF1F739A1D000CCC17 /* 华元logo@58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "华元logo@58.png"; sourceTree = "<group>"; };
+		038DF9F01F739A1D000CCC17 /* 华元logo@60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "华元logo@60.png"; sourceTree = "<group>"; };
+		038DF9F11F739A1D000CCC17 /* 华元logo@80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "华元logo@80.png"; sourceTree = "<group>"; };
+		038DF9FD1F73A2DA000CCC17 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
+		03A60D3D1F73B27B00BB50C3 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		03A60D3E1F73B27B00BB50C3 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		03A60D411F73B3D200BB50C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		03A60D431F73B65000BB50C3 /* r55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = r55.png; sourceTree = "<group>"; };
+		03A60D451F73C02C00BB50C3 /* delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delay.swift; sourceTree = "<group>"; };
+		03A60D471F74E8D200BB50C3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		03A654A91F70A6E400853303 /* BGimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGimage.jpeg; sourceTree = "<group>"; };
+		03A654AD1F70B08C00853303 /* headwayLogo金.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headwayLogo金.png"; sourceTree = "<group>"; };
+		03A654B01F70B08C00853303 /* headwayLogo白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headwayLogo白.png"; sourceTree = "<group>"; };
+		03A654B51F70B10000853303 /* headwayLogo灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headwayLogo灰.png"; sourceTree = "<group>"; };
+		03A654BC1F70B9B500853303 /* StrokeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAnimator.swift; sourceTree = "<group>"; };
+		03A654C11F70C6D500853303 /* naghtsky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naghtsky.png; sourceTree = "<group>"; };
+		03A654C91F70E33F00853303 /* launchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = launchScreenViewController.swift; sourceTree = "<group>"; };
+		03A654CA1F70E33F00853303 /* launchScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = launchScreenViewController.xib; sourceTree = "<group>"; };
+		03A654CD1F71035500853303 /* chooseIdentityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chooseIdentityViewController.swift; sourceTree = "<group>"; };
+		03A654D01F7109A100853303 /* verificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = verificationViewController.swift; sourceTree = "<group>"; };
+		03A654D71F71125A00853303 /* randomVerificationCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomVerificationCode.swift; sourceTree = "<group>"; };
+		03A654D91F71F97400853303 /* buttonCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = buttonCount.swift; sourceTree = "<group>"; };
+		03A654DD1F724D0900853303 /* ownerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ownerViewController.swift; sourceTree = "<group>"; };
+		03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		03B204721F7CFAD200C3E5A2 /* 密码@32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@32.png"; sourceTree = "<group>"; };
+		03B204731F7CFAD200C3E5A2 /* 密码@64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@64.png"; sourceTree = "<group>"; };
+		03B204741F7CFAD200C3E5A2 /* 账号@32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号@32.png"; sourceTree = "<group>"; };
+		03B204751F7CFAD200C3E5A2 /* 账号@64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号@64.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03387AA21F6FA4E200DCF3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B2046E1F7CFA7700C3E5A2 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03387AB61F6FA4E300DCF3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03387AC11F6FA4E300DCF3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032806AC1F78DEA30026063A /* ImageHelper */ = {
+			isa = PBXGroup;
+			children = (
+				032806AD1F78DEC60026063A /* ImageHelper.swift */,
+				032806AE1F78DEC60026063A /* ImageVIewExtension.swift */,
+			);
+			name = ImageHelper;
+			sourceTree = "<group>";
+		};
+		032806B11F78DF260026063A /* 智慧社区首页 */ = {
+			isa = PBXGroup;
+			children = (
+				032806A61F78D58F0026063A /* SliderGalleryController.swift */,
+				032806BE1F79E1D80026063A /* homePageViewController.swift */,
+			);
+			name = "智慧社区首页";
+			sourceTree = "<group>";
+		};
+		032806C01F7A28F70026063A /* 费用缴纳 */ = {
+			isa = PBXGroup;
+			children = (
+				032806C11F7A29A60026063A /* feesPaymentViewController.swift */,
+				032806E51F7B43890026063A /* paymentRecordViewController.swift */,
+				032806C31F7A371E0026063A /* feesDetailViewController.swift */,
+			);
+			name = "费用缴纳";
+			sourceTree = "<group>";
+		};
+		032806EB1F7C8EFD0026063A /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				032806EC1F7C8F440026063A /* personalViewController.swift */,
+				032807001F7CE0CD0026063A /* personalHeaderView.xib */,
+				032806FE1F7CDE830026063A /* personalHeaderView.swift */,
+			);
+			name = "个人中心";
+			sourceTree = "<group>";
+		};
+		03387A9C1F6FA4E200DCF3AE = {
+			isa = PBXGroup;
+			children = (
+				03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */,
+				032806AC1F78DEA30026063A /* ImageHelper */,
+				03387AA71F6FA4E200DCF3AE /* headwayTest */,
+				03387ABC1F6FA4E300DCF3AE /* headwayTestTests */,
+				03387AC71F6FA4E300DCF3AE /* headwayTestUITests */,
+				03387AA61F6FA4E200DCF3AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03387AA61F6FA4E200DCF3AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03387AA51F6FA4E200DCF3AE /* headwayTest.app */,
+				03387AB91F6FA4E300DCF3AE /* headwayTestTests.xctest */,
+				03387AC41F6FA4E300DCF3AE /* headwayTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03387AA71F6FA4E200DCF3AE /* headwayTest */ = {
+			isa = PBXGroup;
+			children = (
+				03A654D51F710DC900853303 /* model */,
+				03A654D41F710B9900853303 /* controller */,
+				03A654BB1F70B98700853303 /* supportFile */,
+				03A6549C1F6FB0C900853303 /* image */,
+				03387AA81F6FA4E200DCF3AE /* AppDelegate.swift */,
+				03387AAC1F6FA4E200DCF3AE /* Main.storyboard */,
+				03387AD61F6FA68A00DCF3AE /* hwNavigationC.swift */,
+				03387AAF1F6FA4E200DCF3AE /* Assets.xcassets */,
+				03387AB11F6FA4E200DCF3AE /* LaunchScreen.storyboard */,
+				03387AB41F6FA4E200DCF3AE /* Info.plist */,
+			);
+			path = headwayTest;
+			sourceTree = "<group>";
+		};
+		03387ABC1F6FA4E300DCF3AE /* headwayTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				03387ABD1F6FA4E300DCF3AE /* headwayTestTests.swift */,
+				03387ABF1F6FA4E300DCF3AE /* Info.plist */,
+			);
+			path = headwayTestTests;
+			sourceTree = "<group>";
+		};
+		03387AC71F6FA4E300DCF3AE /* headwayTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03387AC81F6FA4E300DCF3AE /* headwayTestUITests.swift */,
+				03387ACA1F6FA4E300DCF3AE /* Info.plist */,
+			);
+			path = headwayTestUITests;
+			sourceTree = "<group>";
+		};
+		03A6549C1F6FB0C900853303 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				032806FC1F7C98C50026063A /* about_head_bg@2x.png */,
+				032806FA1F7C985F0026063A /* personal_bg.jpeg */,
+				032806E91F7B4D2A0026063A /* ic_more_down.png */,
+				032806DF1F7B383F0026063A /* 其他.png */,
+				032806D51F7B37930026063A /* 电费.png */,
+				032806D61F7B37930026063A /* 水费.png */,
+				032806D71F7B37930026063A /* 维修.png */,
+				032806D81F7B37930026063A /* 物业费.png */,
+				032806D91F7B37930026063A /* 小区.png */,
+				038DF9FD1F73A2DA000CCC17 /* 添加.png */,
+				038DF9EB1F739A1D000CCC17 /* 华元logo@180.png */,
+				038DF9EC1F739A1D000CCC17 /* 华元logo@87.png */,
+				038DF9ED1F739A1D000CCC17 /* 华元logo@120.png */,
+				038DF9EE1F739A1D000CCC17 /* 华元logo@40.png */,
+				038DF9EF1F739A1D000CCC17 /* 华元logo@58.png */,
+				038DF9F01F739A1D000CCC17 /* 华元logo@60.png */,
+				038DF9F11F739A1D000CCC17 /* 华元logo@80.png */,
+				038DF9DD1F735876000CCC17 /* normal_default.png */,
+				038DF9DE1F735876000CCC17 /* owner_default.png */,
+				038DF9DF1F735876000CCC17 /* owner_selected.png */,
+				038DF9E01F735876000CCC17 /* normal_selected.png */,
+				03A654C11F70C6D500853303 /* naghtsky.png */,
+				03A654B51F70B10000853303 /* headwayLogo灰.png */,
+				03A654AD1F70B08C00853303 /* headwayLogo金.png */,
+				03A654B01F70B08C00853303 /* headwayLogo白.png */,
+				03A654A91F70A6E400853303 /* BGimage.jpeg */,
+				03B204721F7CFAD200C3E5A2 /* 密码@32.png */,
+				03B204731F7CFAD200C3E5A2 /* 密码@64.png */,
+				03B204741F7CFAD200C3E5A2 /* 账号@32.png */,
+				03B204751F7CFAD200C3E5A2 /* 账号@64.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		03A654BB1F70B98700853303 /* supportFile */ = {
+			isa = PBXGroup;
+			children = (
+				032806E11F7B42AC0026063A /* TGDropBoxView.swift */,
+				03A60D471F74E8D200BB50C3 /* SwiftyJSON.swift */,
+				03A60D451F73C02C00BB50C3 /* delay.swift */,
+				03A60D431F73B65000BB50C3 /* r55.png */,
+				03A60D411F73B3D200BB50C3 /* Default-568h@2x.png */,
+				03A60D3D1F73B27B00BB50C3 /* Default-736h@3x.png */,
+				03A60D3E1F73B27B00BB50C3 /* Default-667h@2x.png */,
+				03A654BC1F70B9B500853303 /* StrokeAnimator.swift */,
+			);
+			name = supportFile;
+			sourceTree = "<group>";
+		};
+		03A654C01F70C2F600853303 /* 启动界面 */ = {
+			isa = PBXGroup;
+			children = (
+				03A654C91F70E33F00853303 /* launchScreenViewController.swift */,
+				03A654CA1F70E33F00853303 /* launchScreenViewController.xib */,
+			);
+			name = "启动界面";
+			sourceTree = "<group>";
+		};
+		03A654CF1F71035E00853303 /* 选择身份 */ = {
+			isa = PBXGroup;
+			children = (
+				03A654CD1F71035500853303 /* chooseIdentityViewController.swift */,
+			);
+			name = "选择身份";
+			sourceTree = "<group>";
+		};
+		03A654D21F7109A800853303 /* 手机验证 */ = {
+			isa = PBXGroup;
+			children = (
+				03A654D01F7109A100853303 /* verificationViewController.swift */,
+			);
+			name = "手机验证";
+			sourceTree = "<group>";
+		};
+		03A654D31F710B8000853303 /* 登录界面 */ = {
+			isa = PBXGroup;
+			children = (
+				03387AAA1F6FA4E200DCF3AE /* ViewController.swift */,
+			);
+			name = "登录界面";
+			sourceTree = "<group>";
+		};
+		03A654D41F710B9900853303 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				032806EB1F7C8EFD0026063A /* 个人中心 */,
+				032806C01F7A28F70026063A /* 费用缴纳 */,
+				032806B11F78DF260026063A /* 智慧社区首页 */,
+				03E444F71F726442009516B0 /* 商家注册 */,
+				03A654DC1F724CC200853303 /* 业主注册 */,
+				03A654D31F710B8000853303 /* 登录界面 */,
+				03A654C01F70C2F600853303 /* 启动界面 */,
+				03A654CF1F71035E00853303 /* 选择身份 */,
+				03A654D21F7109A800853303 /* 手机验证 */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		03A654D51F710DC900853303 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				03A654DB1F72057600853303 /* 倒计时按钮 */,
+				03A654D61F710DD100853303 /* 生成验证码 */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		03A654D61F710DD100853303 /* 生成验证码 */ = {
+			isa = PBXGroup;
+			children = (
+				03A654D71F71125A00853303 /* randomVerificationCode.swift */,
+			);
+			name = "生成验证码";
+			sourceTree = "<group>";
+		};
+		03A654DB1F72057600853303 /* 倒计时按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				03A654D91F71F97400853303 /* buttonCount.swift */,
+			);
+			name = "倒计时按钮";
+			sourceTree = "<group>";
+		};
+		03A654DC1F724CC200853303 /* 业主注册 */ = {
+			isa = PBXGroup;
+			children = (
+				03A654DD1F724D0900853303 /* ownerViewController.swift */,
+			);
+			name = "业主注册";
+			sourceTree = "<group>";
+		};
+		03B204561F7CFA3400C3E5A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03B204611F7CFA3400C3E5A2 /* Alamofire.framework */,
+				03B204631F7CFA3400C3E5A2 /* Alamofire iOS Tests.xctest */,
+				03B204651F7CFA3400C3E5A2 /* Alamofire.framework */,
+				03B204671F7CFA3400C3E5A2 /* Alamofire macOS Tests.xctest */,
+				03B204691F7CFA3400C3E5A2 /* Alamofire.framework */,
+				03B2046B1F7CFA3400C3E5A2 /* Alamofire tvOS Tests.xctest */,
+				03B2046D1F7CFA3400C3E5A2 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03E444F71F726442009516B0 /* 商家注册 */ = {
+			isa = PBXGroup;
+			children = (
+				038DF9E51F735B68000CCC17 /* businessViewController.swift */,
+			);
+			name = "商家注册";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03387AA41F6FA4E200DCF3AE /* headwayTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03387ACD1F6FA4E300DCF3AE /* Build configuration list for PBXNativeTarget "headwayTest" */;
+			buildPhases = (
+				03387AA11F6FA4E200DCF3AE /* Sources */,
+				03387AA21F6FA4E200DCF3AE /* Frameworks */,
+				03387AA31F6FA4E200DCF3AE /* Resources */,
+				032806A11F788B5D0026063A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03B204711F7CFA7700C3E5A2 /* PBXTargetDependency */,
+			);
+			name = headwayTest;
+			productName = headwayTest;
+			productReference = 03387AA51F6FA4E200DCF3AE /* headwayTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03387AB81F6FA4E300DCF3AE /* headwayTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03387AD01F6FA4E300DCF3AE /* Build configuration list for PBXNativeTarget "headwayTestTests" */;
+			buildPhases = (
+				03387AB51F6FA4E300DCF3AE /* Sources */,
+				03387AB61F6FA4E300DCF3AE /* Frameworks */,
+				03387AB71F6FA4E300DCF3AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03387ABB1F6FA4E300DCF3AE /* PBXTargetDependency */,
+			);
+			name = headwayTestTests;
+			productName = headwayTestTests;
+			productReference = 03387AB91F6FA4E300DCF3AE /* headwayTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03387AC31F6FA4E300DCF3AE /* headwayTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03387AD31F6FA4E300DCF3AE /* Build configuration list for PBXNativeTarget "headwayTestUITests" */;
+			buildPhases = (
+				03387AC01F6FA4E300DCF3AE /* Sources */,
+				03387AC11F6FA4E300DCF3AE /* Frameworks */,
+				03387AC21F6FA4E300DCF3AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03387AC61F6FA4E300DCF3AE /* PBXTargetDependency */,
+			);
+			name = headwayTestUITests;
+			productName = headwayTestUITests;
+			productReference = 03387AC41F6FA4E300DCF3AE /* headwayTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03387A9D1F6FA4E200DCF3AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "相科峰";
+				TargetAttributes = {
+					03387AA41F6FA4E200DCF3AE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y6UGH76JHD;
+						ProvisioningStyle = Automatic;
+					};
+					03387AB81F6FA4E300DCF3AE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y6UGH76JHD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03387AA41F6FA4E200DCF3AE;
+					};
+					03387AC31F6FA4E300DCF3AE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y6UGH76JHD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03387AA41F6FA4E200DCF3AE;
+					};
+				};
+			};
+			buildConfigurationList = 03387AA01F6FA4E200DCF3AE /* Build configuration list for PBXProject "headwayTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03387A9C1F6FA4E200DCF3AE;
+			productRefGroup = 03387AA61F6FA4E200DCF3AE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 03B204561F7CFA3400C3E5A2 /* Products */;
+					ProjectRef = 03B204551F7CFA3400C3E5A2 /* Alamofire.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				03387AA41F6FA4E200DCF3AE /* headwayTest */,
+				03387AB81F6FA4E300DCF3AE /* headwayTestTests */,
+				03387AC31F6FA4E300DCF3AE /* headwayTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		03B204611F7CFA3400C3E5A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 03B204601F7CFA3400C3E5A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03B204631F7CFA3400C3E5A2 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 03B204621F7CFA3400C3E5A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03B204651F7CFA3400C3E5A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 03B204641F7CFA3400C3E5A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03B204671F7CFA3400C3E5A2 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 03B204661F7CFA3400C3E5A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03B204691F7CFA3400C3E5A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 03B204681F7CFA3400C3E5A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03B2046B1F7CFA3400C3E5A2 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 03B2046A1F7CFA3400C3E5A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		03B2046D1F7CFA3400C3E5A2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 03B2046C1F7CFA3400C3E5A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03387AA31F6FA4E200DCF3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038DF9E31F735876000CCC17 /* owner_selected.png in Resources */,
+				03A654B11F70B08C00853303 /* headwayLogo金.png in Resources */,
+				038DF9E11F735876000CCC17 /* normal_default.png in Resources */,
+				032806DD1F7B37930026063A /* 物业费.png in Resources */,
+				03A654B41F70B08C00853303 /* headwayLogo白.png in Resources */,
+				03A60D441F73B65000BB50C3 /* r55.png in Resources */,
+				032806DA1F7B37930026063A /* 电费.png in Resources */,
+				03A60D421F73B3D200BB50C3 /* Default-568h@2x.png in Resources */,
+				038DF9F81F739A1D000CCC17 /* 华元logo@80.png in Resources */,
+				038DF9F51F739A1D000CCC17 /* 华元logo@40.png in Resources */,
+				03A654AA1F70A6E400853303 /* BGimage.jpeg in Resources */,
+				038DF9F41F739A1D000CCC17 /* 华元logo@120.png in Resources */,
+				03B204761F7CFAD200C3E5A2 /* 密码@32.png in Resources */,
+				038DF9F61F739A1D000CCC17 /* 华元logo@58.png in Resources */,
+				03A654B61F70B10000853303 /* headwayLogo灰.png in Resources */,
+				032806E01F7B383F0026063A /* 其他.png in Resources */,
+				038DF9F31F739A1D000CCC17 /* 华元logo@87.png in Resources */,
+				032807011F7CE0CD0026063A /* personalHeaderView.xib in Resources */,
+				03387AB31F6FA4E200DCF3AE /* LaunchScreen.storyboard in Resources */,
+				03A654CC1F70E33F00853303 /* launchScreenViewController.xib in Resources */,
+				03387AB01F6FA4E200DCF3AE /* Assets.xcassets in Resources */,
+				038DF9F71F739A1D000CCC17 /* 华元logo@60.png in Resources */,
+				032806DB1F7B37930026063A /* 水费.png in Resources */,
+				032806DC1F7B37930026063A /* 维修.png in Resources */,
+				03A60D401F73B27B00BB50C3 /* Default-667h@2x.png in Resources */,
+				03B204791F7CFAD200C3E5A2 /* 账号@64.png in Resources */,
+				032806FD1F7C98C50026063A /* about_head_bg@2x.png in Resources */,
+				03B204781F7CFAD200C3E5A2 /* 账号@32.png in Resources */,
+				038DF9E21F735876000CCC17 /* owner_default.png in Resources */,
+				038DF9F21F739A1D000CCC17 /* 华元logo@180.png in Resources */,
+				032806DE1F7B37930026063A /* 小区.png in Resources */,
+				038DF9FE1F73A2DA000CCC17 /* 添加.png in Resources */,
+				03387AAE1F6FA4E200DCF3AE /* Main.storyboard in Resources */,
+				032806FB1F7C985F0026063A /* personal_bg.jpeg in Resources */,
+				03A654C21F70C6D500853303 /* naghtsky.png in Resources */,
+				038DF9E41F735876000CCC17 /* normal_selected.png in Resources */,
+				03A60D3F1F73B27B00BB50C3 /* Default-736h@3x.png in Resources */,
+				032806EA1F7B4D2A0026063A /* ic_more_down.png in Resources */,
+				03B204771F7CFAD200C3E5A2 /* 密码@64.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03387AB71F6FA4E300DCF3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03387AC21F6FA4E300DCF3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03387AA11F6FA4E200DCF3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A654DE1F724D0A00853303 /* ownerViewController.swift in Sources */,
+				03A654DA1F71F97400853303 /* buttonCount.swift in Sources */,
+				03387AAB1F6FA4E200DCF3AE /* ViewController.swift in Sources */,
+				03A654CE1F71035500853303 /* chooseIdentityViewController.swift in Sources */,
+				032806C21F7A29A60026063A /* feesPaymentViewController.swift in Sources */,
+				03A654BD1F70B9B600853303 /* StrokeAnimator.swift in Sources */,
+				03387AD71F6FA68A00DCF3AE /* hwNavigationC.swift in Sources */,
+				032806C41F7A371E0026063A /* feesDetailViewController.swift in Sources */,
+				032806BF1F79E1D80026063A /* homePageViewController.swift in Sources */,
+				03A654CB1F70E33F00853303 /* launchScreenViewController.swift in Sources */,
+				032806FF1F7CDE830026063A /* personalHeaderView.swift in Sources */,
+				032806E61F7B43890026063A /* paymentRecordViewController.swift in Sources */,
+				03A654D11F7109A100853303 /* verificationViewController.swift in Sources */,
+				038DF9E61F735B68000CCC17 /* businessViewController.swift in Sources */,
+				03A60D461F73C02C00BB50C3 /* delay.swift in Sources */,
+				03A654D81F71125A00853303 /* randomVerificationCode.swift in Sources */,
+				032806E21F7B42AC0026063A /* TGDropBoxView.swift in Sources */,
+				032806AF1F78DEC60026063A /* ImageHelper.swift in Sources */,
+				032806A71F78D58F0026063A /* SliderGalleryController.swift in Sources */,
+				03A60D481F74E8D300BB50C3 /* SwiftyJSON.swift in Sources */,
+				032806B01F78DEC60026063A /* ImageVIewExtension.swift in Sources */,
+				032806ED1F7C8F440026063A /* personalViewController.swift in Sources */,
+				03387AA91F6FA4E200DCF3AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03387AB51F6FA4E300DCF3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03387ABE1F6FA4E300DCF3AE /* headwayTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03387AC01F6FA4E300DCF3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03387AC91F6FA4E300DCF3AE /* headwayTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03387ABB1F6FA4E300DCF3AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03387AA41F6FA4E200DCF3AE /* headwayTest */;
+			targetProxy = 03387ABA1F6FA4E300DCF3AE /* PBXContainerItemProxy */;
+		};
+		03387AC61F6FA4E300DCF3AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03387AA41F6FA4E200DCF3AE /* headwayTest */;
+			targetProxy = 03387AC51F6FA4E300DCF3AE /* PBXContainerItemProxy */;
+		};
+		03B204711F7CFA7700C3E5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 03B204701F7CFA7700C3E5A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03387AAC1F6FA4E200DCF3AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03387AAD1F6FA4E200DCF3AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03387AB11F6FA4E200DCF3AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03387AB21F6FA4E200DCF3AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03387ACB1F6FA4E300DCF3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03387ACC1F6FA4E300DCF3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03387ACE1F6FA4E300DCF3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = Y6UGH76JHD;
+				INFOPLIST_FILE = headwayTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = likeabee.headwayTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		03387ACF1F6FA4E300DCF3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = Y6UGH76JHD;
+				INFOPLIST_FILE = headwayTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = likeabee.headwayTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		03387AD11F6FA4E300DCF3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y6UGH76JHD;
+				INFOPLIST_FILE = headwayTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = likeabee.headwayTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/headwayTest.app/headwayTest";
+			};
+			name = Debug;
+		};
+		03387AD21F6FA4E300DCF3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y6UGH76JHD;
+				INFOPLIST_FILE = headwayTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = likeabee.headwayTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/headwayTest.app/headwayTest";
+			};
+			name = Release;
+		};
+		03387AD41F6FA4E300DCF3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y6UGH76JHD;
+				INFOPLIST_FILE = headwayTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = likeabee.headwayTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = headwayTest;
+			};
+			name = Debug;
+		};
+		03387AD51F6FA4E300DCF3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y6UGH76JHD;
+				INFOPLIST_FILE = headwayTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = likeabee.headwayTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = headwayTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03387AA01F6FA4E200DCF3AE /* Build configuration list for PBXProject "headwayTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03387ACB1F6FA4E300DCF3AE /* Debug */,
+				03387ACC1F6FA4E300DCF3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03387ACD1F6FA4E300DCF3AE /* Build configuration list for PBXNativeTarget "headwayTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03387ACE1F6FA4E300DCF3AE /* Debug */,
+				03387ACF1F6FA4E300DCF3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03387AD01F6FA4E300DCF3AE /* Build configuration list for PBXNativeTarget "headwayTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03387AD11F6FA4E300DCF3AE /* Debug */,
+				03387AD21F6FA4E300DCF3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03387AD31F6FA4E300DCF3AE /* Build configuration list for PBXNativeTarget "headwayTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03387AD41F6FA4E300DCF3AE /* Debug */,
+				03387AD51F6FA4E300DCF3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03387A9D1F6FA4E200DCF3AE /* Project object */;
+}

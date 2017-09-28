@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Hd-TV-9eu"/>
+                        <viewControllerLayoutGuide type="bottom" id="aYB-kb-IQO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAI-qt-7xf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Mkj-wI-ixZ">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headwayLogo金.png" translatesAutoresizingMaskIntoConstraints="NO" id="PYb-aA-eyg">
+                                <rect key="frame" x="147" y="154" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6JY-kL-X0Z"/>
+                                    <constraint firstAttribute="width" constant="80" id="gNN-jC-6ts"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PYb-aA-eyg" firstAttribute="centerX" secondItem="Mkj-wI-ixZ" secondAttribute="centerX" id="D2G-OX-pD1"/>
+                            <constraint firstItem="Mkj-wI-ixZ" firstAttribute="bottom" secondItem="aYB-kb-IQO" secondAttribute="top" id="aYO-Ek-q7g"/>
+                            <constraint firstItem="Mkj-wI-ixZ" firstAttribute="leading" secondItem="dAI-qt-7xf" secondAttribute="leadingMargin" id="dQK-yM-HNZ"/>
+                            <constraint firstItem="Mkj-wI-ixZ" firstAttribute="top" secondItem="5Hd-TV-9eu" secondAttribute="bottom" id="j40-Bt-oIr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mkj-wI-ixZ" secondAttribute="trailing" id="jbf-W9-L95"/>
+                            <constraint firstItem="Mkj-wI-ixZ" firstAttribute="top" secondItem="PYb-aA-eyg" secondAttribute="bottom" constant="-214" id="m7u-pA-9b3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BGimage.jpeg" width="1200" height="2133"/>
+        <image name="headwayLogo金.png" width="143" height="143"/>
+    </resources>
+</document>
