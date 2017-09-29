@@ -31,6 +31,7 @@ class personalViewController: UIViewController , UITableViewDelegate , UITableVi
         imageArray = [["房屋","车辆"],["订单","接单"],["缴费","报修","反馈"]]
         let personalHeaderView = Bundle.main.loadNibNamed("personalHeaderView", owner: nil, options: [:])?.last as? personalHeaderView
         personalHeaderView?.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: view.bounds.width, height: 200))
+        personalHeaderView?.headImageButton.addTarget(self, action: #selector(self.headImageButtonClicked), for: UIControlEvents.touchUpInside)
         personalTableView.tableHeaderView = personalHeaderView
         personalTableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         personalTableView.sectionFooterHeight = 0
@@ -63,11 +64,27 @@ class personalViewController: UIViewController , UITableViewDelegate , UITableVi
         singleCell.textLabel?.text = titleArray[indexPath.section][indexPath.row]
         return singleCell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        personalTableView.deselectRow(at: indexPath, animated: true)
+        let titleString = titleArray[indexPath.section][indexPath.row]
+        self.performSegue(withIdentifier: "showPersonalDetail", sender: titleString)
+        
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "showPersonalDetail"){
+            
+        }
+    }
     func backButtonClicked(){
         self.dismiss(animated: true, completion: nil)
     }
     
+    func headImageButtonClicked(){
+        let mainSB = UIStoryboard(name: "Main", bundle: nil)
+        let personalInfoVC = mainSB.instantiateViewController(withIdentifier: "personalInfoVC")
+        self.present(personalInfoVC, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
