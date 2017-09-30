@@ -313,7 +313,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mK0-gk-IXw">
-                                        <rect key="frame" x="261" y="54.5" width="62" height="25"/>
+                                        <rect key="frame" x="261" y="54" width="62" height="25"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="VIa-qk-vra"/>
@@ -633,7 +633,7 @@
         <!--Payment Record View Controller-->
         <scene sceneID="pa9-M8-Mbc">
             <objects>
-                <viewController id="cXu-Jc-lzW" customClass="paymentRecordViewController" customModule="headwayTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="feesPaymentRecordVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cXu-Jc-lzW" customClass="paymentRecordViewController" customModule="headwayTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IkB-5M-8KH"/>
                         <viewControllerLayoutGuide type="bottom" id="dd4-9v-PjN"/>
@@ -753,9 +753,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <segue destination="Lha-mY-gIp" kind="showDetail" identifier="showPersonalDetail" id="8Ed-Zs-dC0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAS-mg-zxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -871,24 +868,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHq-fk-hET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1218.4000000000001" y="1671.8140929535234"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="agO-KS-dgh">
-            <objects>
-                <viewController id="Lha-mY-gIp" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lYp-Dj-o88"/>
-                        <viewControllerLayoutGuide type="bottom" id="Oyt-7Y-9RR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NRx-tc-Kn2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BKb-c5-JFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-538" y="1672"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="Rtv-Jv-lw1">
@@ -1032,7 +1011,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoR-yc-5gh">
-                                <rect key="frame" x="277" y="255" width="62" height="25"/>
+                                <rect key="frame" x="277" y="255.5" width="62" height="25"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="aBE-Ms-EoQ"/>

@@ -38,6 +38,8 @@
 		03387ABE1F6FA4E300DCF3AE /* headwayTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387ABD1F6FA4E300DCF3AE /* headwayTestTests.swift */; };
 		03387AC91F6FA4E300DCF3AE /* headwayTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387AC81F6FA4E300DCF3AE /* headwayTestUITests.swift */; };
 		03387AD71F6FA68A00DCF3AE /* hwNavigationC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387AD61F6FA68A00DCF3AE /* hwNavigationC.swift */; };
+		0364DF2D1F7F326B00B95D40 /* image_fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364DF2C1F7F326B00B95D40 /* image_fix.swift */; };
+		0364DF301F7F39B800B95D40 /* imageUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364DF2F1F7F39B800B95D40 /* imageUpload.swift */; };
 		038DF9E11F735876000CCC17 /* normal_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DD1F735876000CCC17 /* normal_default.png */; };
 		038DF9E21F735876000CCC17 /* owner_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DE1F735876000CCC17 /* owner_default.png */; };
 		038DF9E31F735876000CCC17 /* owner_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DF1F735876000CCC17 /* owner_selected.png */; };
@@ -53,7 +55,6 @@
 		038DF9FE1F73A2DA000CCC17 /* 添加.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9FD1F73A2DA000CCC17 /* 添加.png */; };
 		03A60D3F1F73B27B00BB50C3 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A60D3D1F73B27B00BB50C3 /* Default-736h@3x.png */; };
 		03A60D401F73B27B00BB50C3 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A60D3E1F73B27B00BB50C3 /* Default-667h@2x.png */; };
-		03A60D421F73B3D200BB50C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A60D411F73B3D200BB50C3 /* Default-568h@2x.png */; };
 		03A60D441F73B65000BB50C3 /* r55.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A60D431F73B65000BB50C3 /* r55.png */; };
 		03A60D461F73C02C00BB50C3 /* delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A60D451F73C02C00BB50C3 /* delay.swift */; };
 		03A60D481F74E8D300BB50C3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A60D471F74E8D200BB50C3 /* SwiftyJSON.swift */; };
@@ -203,6 +204,8 @@
 		03387AC81F6FA4E300DCF3AE /* headwayTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headwayTestUITests.swift; sourceTree = "<group>"; };
 		03387ACA1F6FA4E300DCF3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03387AD61F6FA68A00DCF3AE /* hwNavigationC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hwNavigationC.swift; sourceTree = "<group>"; };
+		0364DF2C1F7F326B00B95D40 /* image_fix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_fix.swift; sourceTree = "<group>"; };
+		0364DF2F1F7F39B800B95D40 /* imageUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUpload.swift; sourceTree = "<group>"; };
 		038DF9DD1F735876000CCC17 /* normal_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal_default.png; sourceTree = "<group>"; };
 		038DF9DE1F735876000CCC17 /* owner_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owner_default.png; sourceTree = "<group>"; };
 		038DF9DF1F735876000CCC17 /* owner_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owner_selected.png; sourceTree = "<group>"; };
@@ -218,7 +221,6 @@
 		038DF9FD1F73A2DA000CCC17 /* 添加.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "添加.png"; sourceTree = "<group>"; };
 		03A60D3D1F73B27B00BB50C3 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		03A60D3E1F73B27B00BB50C3 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
-		03A60D411F73B3D200BB50C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		03A60D431F73B65000BB50C3 /* r55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = r55.png; sourceTree = "<group>"; };
 		03A60D451F73C02C00BB50C3 /* delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delay.swift; sourceTree = "<group>"; };
 		03A60D471F74E8D200BB50C3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -240,6 +242,10 @@
 		03B204731F7CFAD200C3E5A2 /* 密码@64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@64.png"; sourceTree = "<group>"; };
 		03B204741F7CFAD200C3E5A2 /* 账号@32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号@32.png"; sourceTree = "<group>"; };
 		03B204751F7CFAD200C3E5A2 /* 账号@64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "账号@64.png"; sourceTree = "<group>"; };
+		03C175DC1F7F8D5100E1A268 /* 640.960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640.960.png; sourceTree = "<group>"; };
+		03C175DD1F7F8D6A00E1A268 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		03C175DE1F7F8DE100E1A268 /* 320.480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 320.480.png; sourceTree = "<group>"; };
+		03C175DF1F7F8E5C00E1A268 /* 1125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1125.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +379,22 @@
 			path = headwayTestUITests;
 			sourceTree = "<group>";
 		};
+		0364DF241F7F323600B95D40 /* 图片位置修正 */ = {
+			isa = PBXGroup;
+			children = (
+				0364DF2C1F7F326B00B95D40 /* image_fix.swift */,
+			);
+			name = "图片位置修正";
+			sourceTree = "<group>";
+		};
+		0364DF2E1F7F399500B95D40 /* 图片上传 */ = {
+			isa = PBXGroup;
+			children = (
+				0364DF2F1F7F39B800B95D40 /* imageUpload.swift */,
+			);
+			name = "图片上传";
+			sourceTree = "<group>";
+		};
 		03A6549C1F6FB0C900853303 /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,8 +438,11 @@
 				032806E11F7B42AC0026063A /* TGDropBoxView.swift */,
 				03A60D471F74E8D200BB50C3 /* SwiftyJSON.swift */,
 				03A60D451F73C02C00BB50C3 /* delay.swift */,
+				03C175DF1F7F8E5C00E1A268 /* 1125.png */,
+				03C175DC1F7F8D5100E1A268 /* 640.960.png */,
+				03C175DE1F7F8DE100E1A268 /* 320.480.png */,
+				03C175DD1F7F8D6A00E1A268 /* Default-568h@2x.png */,
 				03A60D431F73B65000BB50C3 /* r55.png */,
-				03A60D411F73B3D200BB50C3 /* Default-568h@2x.png */,
 				03A60D3D1F73B27B00BB50C3 /* Default-736h@3x.png */,
 				03A60D3E1F73B27B00BB50C3 /* Default-667h@2x.png */,
 				03A654BC1F70B9B500853303 /* StrokeAnimator.swift */,
@@ -477,6 +502,8 @@
 		03A654D51F710DC900853303 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				0364DF2E1F7F399500B95D40 /* 图片上传 */,
+				0364DF241F7F323600B95D40 /* 图片位置修正 */,
 				0323CFC01F7E37D500A60EB3 /* 轻量本地数据存储 */,
 				03A654DB1F72057600853303 /* 倒计时按钮 */,
 				03A654D61F710DD100853303 /* 生成验证码 */,
@@ -707,7 +734,6 @@
 				03A654B41F70B08C00853303 /* headwayLogo白.png in Resources */,
 				03A60D441F73B65000BB50C3 /* r55.png in Resources */,
 				032806DA1F7B37930026063A /* 电费.png in Resources */,
-				03A60D421F73B3D200BB50C3 /* Default-568h@2x.png in Resources */,
 				038DF9F81F739A1D000CCC17 /* 华元logo@80.png in Resources */,
 				038DF9F51F739A1D000CCC17 /* 华元logo@40.png in Resources */,
 				03A654AA1F70A6E400853303 /* BGimage.jpeg in Resources */,
@@ -779,9 +805,11 @@
 				03A654D11F7109A100853303 /* verificationViewController.swift in Sources */,
 				038DF9E61F735B68000CCC17 /* businessViewController.swift in Sources */,
 				03A60D461F73C02C00BB50C3 /* delay.swift in Sources */,
+				0364DF2D1F7F326B00B95D40 /* image_fix.swift in Sources */,
 				03A654D81F71125A00853303 /* randomVerificationCode.swift in Sources */,
 				032806E21F7B42AC0026063A /* TGDropBoxView.swift in Sources */,
 				032806AF1F78DEC60026063A /* ImageHelper.swift in Sources */,
+				0364DF301F7F39B800B95D40 /* imageUpload.swift in Sources */,
 				032806A71F78D58F0026063A /* SliderGalleryController.swift in Sources */,
 				03A60D481F74E8D300BB50C3 /* SwiftyJSON.swift in Sources */,
 				032806B01F78DEC60026063A /* ImageVIewExtension.swift in Sources */,

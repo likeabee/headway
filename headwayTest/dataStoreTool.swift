@@ -16,7 +16,7 @@ class dataStoreTool{
      - parameter key:   key
      - parameter value: value
      */
-    func setNormalDefault(key:String, value:AnyObject?){
+    func setNormalDefault(key:String, value:String?){
         if value == nil {
             UserDefaults.standard.removeObject(forKey: key)
         }
@@ -47,7 +47,9 @@ class dataStoreTool{
         }
         
     }
-    
+    func isKeyPresentInUserDefaults(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
     /**
      通过key找到储存的value
      
@@ -55,7 +57,7 @@ class dataStoreTool{
      
      - returns: AnyObject
      */
-    func getNormalDefult(key:String)->AnyObject?{
-        return UserDefaults.standard.value(forKey: key) as AnyObject
+    func getNormalDefult(key:String)->String?{
+        return UserDefaults.standard.string(forKey:key)
     }
 }

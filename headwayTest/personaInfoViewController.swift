@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class personaInfoViewController: UIViewController ,UITableViewDelegate , UITableViewDataSource ,UIImagePickerControllerDelegate , UINavigationControllerDelegate{
     //放弃使用纯代码了...还是使用autolayout比较方便= =
     //这里如果使用纯代码的话，可能引起两个view之间的显示冲突
@@ -52,13 +52,22 @@ class personaInfoViewController: UIViewController ,UITableViewDelegate , UITable
             //不知道为什么这里的value一直显示还没设置的状态，难道是因为换了个界面就不存在了？...一波问题
             print("这里有个测试节点")
             let tool = dataStoreTool()
-            if(!tool.dataIsSet(key: "newName")){
-                let newName = tool.getNormalDefult(key: "newName") as! String
+            if(tool.isKeyPresentInUserDefaults(key: "newName")){
+                let newName = tool.getNormalDefult(key: "newName")
                 singleCell.detailTextLabel?.text = newName
-                print(newName)
+                print(newName!)
             }else{
                 singleCell.detailTextLabel?.text = "未设置昵称"
                 print("还没设置")
+            }
+        case 2:
+            singleCell.detailTextLabel?.text = "张三"
+        case 3:
+            let tool = dataStoreTool()
+            if(tool.isKeyPresentInUserDefaults(key: "sex")){
+                singleCell.detailTextLabel?.text = tool.getNormalDefult(key: "sex")
+            }else{
+                singleCell.detailTextLabel?.text = "未设置"
             }
             
         default:
@@ -104,6 +113,30 @@ class personaInfoViewController: UIViewController ,UITableViewDelegate , UITable
             let nickNameChangeVC = mainSB.instantiateViewController(withIdentifier: "nickNameChangeVC")
             self.present(nickNameChangeVC, animated: true, completion: nil)
             break
+        case 2:
+            let alertController = UIAlertController(title: "提示", message: "业主名无法修改哦", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "确定", style: .cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            self.present(alertController, animated: true, completion: nil)
+            break
+        case 3:
+            let alertController = UIAlertController(title: "请选择性别", message: "", preferredStyle: .alert)
+            let maleAction = UIAlertAction(title: "男", style: .default, handler: {
+                (action : UIAlertAction) ->Void in
+                let tool = dataStoreTool()
+                tool.setNormalDefault(key: "sex", value: "男")
+                self.personalInfoTableView.reloadData()
+//                self.dismiss(animated: true, completion: nil)
+            })
+            let femaleAction = UIAlertAction(title: "女", style: .default, handler: {
+                (action: UIAlertAction) -> Void in
+                let tool = dataStoreTool()
+                tool.setNormalDefault(key: "sex", value: "女")
+                self.personalInfoTableView.reloadData()
+            })
+            alertController.addAction(maleAction)
+            alertController.addAction(femaleAction)
+            self.present(alertController, animated: true, completion: nil)
         default:
             break
         }
@@ -116,10 +149,44 @@ class personaInfoViewController: UIViewController ,UITableViewDelegate , UITable
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        print("调用")
+        print("willAppear调用")
         personalInfoTableView.reloadData()
     }
 
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let type : String = (info[UIImagePickerControllerMediaType] as! String)
+        if type == "public.image"{
+            //修正图片位置
+            let image = fixOriention((info[UIImagePickerControllerOriginalImage] as! UIImage))
+            //把图片转换成NSData类型
+            let data = UIImageJPEGRepresentation(image, 0.5)
+            
+            //图片保存的路径
+            //这里将图片放在沙盒的documents文件夹中
+            
+            //home目录
+            let homeDirectory = NSHomeDirectory()
+            let documentPath = homeDirectory + "/Documents"
+            //文件管理器
+            let fileManager: FileManager = FileManager.default
+            //把刚刚图片转换的data对象拷贝到沙盒中，并保存为image.png
+            do{
+                try! fileManager.createDirectory(atPath: documentPath, withIntermediateDirectories: true, attributes: nil)
+            }
+            fileManager.createFile(atPath: documentPath + "/image.png", contents: data, attributes: nil)
+            //得到选择后沙盒中图片的完整路径
+            let filePath : String = documentPath + "/image.png"
+            print("filePath:" + filePath)
+            self.dismiss(animated: true, completion: nil)
+            //这里可以添加上传到服务器的代码，上传成功替换当前imageview的image，可以使用Alamofire
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

@@ -201,7 +201,7 @@ class TGDropBoxView: UIView {
     fileprivate func rotateBoxArrow() {
         let angle: CGFloat = ((self.isShow) ? -179.9 : 179.9)
         UIView.animate(withDuration: 0.2, animations: {
-            self.boxArrow.transform = self.boxArrow.transform.rotated(by: angle * CGFloat(M_PI/180))
+            self.boxArrow.transform = self.boxArrow.transform.rotated(by: angle * CGFloat(Double.pi/180))
         }) 
     }
 

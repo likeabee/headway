@@ -18,7 +18,7 @@ class personalViewController: UIViewController , UITableViewDelegate , UITableVi
     var titleArray = [[String]]()
     //返回按钮
     let backButton = UIButton(frame: CGRect(origin: CGPoint.init(x: 10, y: 20), size: CGSize(width: 60, height: 40)))
-    
+    let personalHeaderView = Bundle.main.loadNibNamed("personalHeaderView", owner: nil, options: [:])?.last as? personalHeaderView
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,13 +29,18 @@ class personalViewController: UIViewController , UITableViewDelegate , UITableVi
         view.addSubview(personalTableView)
         titleArray = [["我的房屋","我的车辆"],["我的订单","我的接单"],["我的缴费","我的报修","我的反馈"]]
         imageArray = [["房屋","车辆"],["订单","接单"],["缴费","报修","反馈"]]
-        let personalHeaderView = Bundle.main.loadNibNamed("personalHeaderView", owner: nil, options: [:])?.last as? personalHeaderView
+        
         personalHeaderView?.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: view.bounds.width, height: 200))
         personalHeaderView?.headImageButton.addTarget(self, action: #selector(self.headImageButtonClicked), for: UIControlEvents.touchUpInside)
+        
+        
+//        personalHeaderView?.headImageButton.setBackgroundImage(self.getImage(), for: .normal)
+        personalHeaderView?.imageView.image = getImage()
+        personalHeaderView?.imageView.layer.cornerRadius = (personalHeaderView?.imageView.frame.width)! / 2
         personalTableView.tableHeaderView = personalHeaderView
         personalTableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         personalTableView.sectionFooterHeight = 0
-        
+        personalHeaderView?.headImageButton.layer.cornerRadius = (personalHeaderView?.headImageButton.frame.width)! / 2
         backButton.setTitle("<返回", for: .normal)
 //        backButton.setTitleColor(UIColor.blue, for: .normal)
         backButton.addTarget(self, action: #selector(self.backButtonClicked), for: UIControlEvents.touchUpInside)
@@ -65,17 +70,61 @@ class personalViewController: UIViewController , UITableViewDelegate , UITableVi
         return singleCell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        personalTableView.deselectRow(at: indexPath, animated: true)
-        let titleString = titleArray[indexPath.section][indexPath.row]
-        self.performSegue(withIdentifier: "showPersonalDetail", sender: titleString)
+//        personalTableView.deselectRow(at: indexPath, animated: true)
+//        let titleString = titleArray[indexPath.section][indexPath.row]
+//        self.performSegue(withIdentifier: "showPersonalDetail", sender: titleString)
+        switch indexPath.section{
+            case 0:
+                switch indexPath.row{
+                case 0:
+                    //这里是我的房屋界面
+                    break
+                case 1:
+                    //这里是我的车辆界面
+                    break
+                default:
+                    break
+                }
+            case 1:
+                switch indexPath.row{
+                case 0:
+                    //这里是我的订单界面
+                    break
+                case 1:
+                    //这里是我的接单界面
+                    break
+                default:
+                    break
+                }
+            case 2:
+                switch indexPath.row{
+                case 0:
+                  //这里是我的缴费界面
+                    print("case被调用了")
+                    let mainSB = UIStoryboard(name: "Main", bundle: nil)
+                    let feesPaymentVC = mainSB.instantiateViewController(withIdentifier: "feesPaymentRecordVC")
+                    //            let feesPaymentVC = paymentRecordViewController()
+                    self.present(feesPaymentVC, animated: true, completion: nil)
+                case 1:
+                   //这里是我的报修界面
+                    break
+                case 2:
+                    //这里是我的反馈界面
+                    break
+                default:
+                    break
+            }
+            default:
+                break
+        }
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "showPersonalDetail"){
-            
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if(segue.identifier == "showPersonalDetail"){
+//
+//        }
+//    }
     func backButtonClicked(){
         self.dismiss(animated: true, completion: nil)
     }
@@ -84,6 +133,29 @@ class personalViewController: UIViewController , UITableViewDelegate , UITableVi
         let mainSB = UIStoryboard(name: "Main", bundle: nil)
         let personalInfoVC = mainSB.instantiateViewController(withIdentifier: "personalInfoVC")
         self.present(personalInfoVC, animated: true, completion: nil)
+    }
+    
+    func getImage() -> UIImage?{
+        //home目录
+        let homeDirectory = NSHomeDirectory()
+        let documentPath = homeDirectory + "/Documents"
+        //文件管理器
+        let fileManager = FileManager.default
+        let filePath = documentPath + "/image.png"
+        let isExist = fileManager.fileExists(atPath: filePath)
+        if(isExist){
+            let image = UIImage(contentsOfFile: filePath)
+            self.personalHeaderView?.headImageButton.setTitle("", for: .normal)
+            return image!
+        }else{
+            return nil
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+//        self.personalHeaderView?.headImageButton.layer.cornerRadius = (personalHeaderView?.headImageButton.bounds.width)! / 2
+//        self.personalHeaderView?.headImageButton.setBackgroundImage(getImage(), for: .normal)
+        self.personalHeaderView?.imageView.image = getImage()
     }
     /*
     // MARK: - Navigation

@@ -20,10 +20,11 @@ class nicknameChangeViewController: UIViewController {
     @IBAction func confirmButton(_ sender: UIButton) {
         let newNickname = newNicknameTextField.text
         
-        tool.setNormalDefault(key: "newName",value: newNickname! as AnyObject)
+        tool.setNormalDefault(key: "newName",value: newNickname)
         print("测试一波...")
         let name = tool.getNormalDefult(key: "newName")
         print(name!)
+        
         let alertView = UIAlertController(title: "提示", message: "修改成功", preferredStyle: .alert)
         let confirmAction = UIAlertAction(title: "确定", style: .cancel, handler:{
             (action: UIAlertAction) ->Void in
