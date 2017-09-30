@@ -21,8 +21,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naghtsky.png" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-XX-67i">
-                    <rect key="frame" x="-150" y="-266.5" width="675" height="1200"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naghtsky.png" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-XX-67i">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rvf-ih-1NN">
                     <rect key="frame" x="30" y="100" width="315" height="150"/>
@@ -46,9 +47,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Rvf-ih-1NN" secondAttribute="trailing" constant="30" id="4YM-Jl-mAS"/>
                 <constraint firstAttribute="trailing" secondItem="2zU-F1-0by" secondAttribute="trailing" constant="350" id="PPh-3L-OCy"/>
-                <constraint firstItem="sJa-XX-67i" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Q82-tE-aPN"/>
                 <constraint firstItem="Rvf-ih-1NN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="UZP-jd-LNT"/>
-                <constraint firstItem="sJa-XX-67i" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mv3-K0-a56"/>
                 <constraint firstAttribute="bottom" secondItem="2zU-F1-0by" secondAttribute="bottom" constant="100" id="wM0-ne-3UW"/>
                 <constraint firstItem="Rvf-ih-1NN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="z7b-8b-Ktr"/>
             </constraints>
