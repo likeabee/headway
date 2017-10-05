@@ -40,6 +40,7 @@
 		03387AD71F6FA68A00DCF3AE /* hwNavigationC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03387AD61F6FA68A00DCF3AE /* hwNavigationC.swift */; };
 		0364DF2D1F7F326B00B95D40 /* image_fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364DF2C1F7F326B00B95D40 /* image_fix.swift */; };
 		0364DF301F7F39B800B95D40 /* imageUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364DF2F1F7F39B800B95D40 /* imageUpload.swift */; };
+		0374E1C71F85BE1200E5C531 /* changePhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E1C61F85BE1200E5C531 /* changePhoneNumberViewController.swift */; };
 		038DF9E11F735876000CCC17 /* normal_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DD1F735876000CCC17 /* normal_default.png */; };
 		038DF9E21F735876000CCC17 /* owner_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DE1F735876000CCC17 /* owner_default.png */; };
 		038DF9E31F735876000CCC17 /* owner_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 038DF9DF1F735876000CCC17 /* owner_selected.png */; };
@@ -206,6 +207,7 @@
 		03387AD61F6FA68A00DCF3AE /* hwNavigationC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hwNavigationC.swift; sourceTree = "<group>"; };
 		0364DF2C1F7F326B00B95D40 /* image_fix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_fix.swift; sourceTree = "<group>"; };
 		0364DF2F1F7F39B800B95D40 /* imageUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUpload.swift; sourceTree = "<group>"; };
+		0374E1C61F85BE1200E5C531 /* changePhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePhoneNumberViewController.swift; sourceTree = "<group>"; };
 		038DF9DD1F735876000CCC17 /* normal_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal_default.png; sourceTree = "<group>"; };
 		038DF9DE1F735876000CCC17 /* owner_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owner_default.png; sourceTree = "<group>"; };
 		038DF9DF1F735876000CCC17 /* owner_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owner_selected.png; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				032807001F7CE0CD0026063A /* personalHeaderView.xib */,
 				032806FE1F7CDE830026063A /* personalHeaderView.swift */,
 				0323CFBE1F7E327E00A60EB3 /* nicknameChangeViewController.swift */,
+				0374E1C61F85BE1200E5C531 /* changePhoneNumberViewController.swift */,
 			);
 			name = "个人中心";
 			sourceTree = "<group>";
@@ -789,6 +792,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0374E1C71F85BE1200E5C531 /* changePhoneNumberViewController.swift in Sources */,
 				03A654DE1F724D0A00853303 /* ownerViewController.swift in Sources */,
 				03A654DA1F71F97400853303 /* buttonCount.swift in Sources */,
 				0323CFBF1F7E327E00A60EB3 /* nicknameChangeViewController.swift in Sources */,

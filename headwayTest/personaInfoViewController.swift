@@ -137,6 +137,10 @@ class personaInfoViewController: UIViewController ,UITableViewDelegate , UITable
             alertController.addAction(maleAction)
             alertController.addAction(femaleAction)
             self.present(alertController, animated: true, completion: nil)
+        case 4:
+            let mainSB = UIStoryboard(name: "Main", bundle: nil)
+            let changePhoneNumberVC = mainSB.instantiateViewController(withIdentifier: "changePhoneNumberVC")
+            self.present(changePhoneNumberVC, animated: true, completion: nil)
         default:
             break
         }

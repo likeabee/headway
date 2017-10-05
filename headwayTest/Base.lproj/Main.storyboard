@@ -313,7 +313,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mK0-gk-IXw">
-                                        <rect key="frame" x="261" y="54" width="62" height="25"/>
+                                        <rect key="frame" x="261" y="54.5" width="62" height="25"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="VIa-qk-vra"/>
@@ -758,6 +758,96 @@
             </objects>
             <point key="canvasLocation" x="134" y="1672"/>
         </scene>
+        <!--Change Phone Number View Controller-->
+        <scene sceneID="9lf-s8-WXC">
+            <objects>
+                <viewController storyboardIdentifier="changePhoneNumberVC" id="nX4-xC-GSb" customClass="changePhoneNumberViewController" customModule="headwayTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K31-N6-6Cc"/>
+                        <viewControllerLayoutGuide type="bottom" id="cdV-Xq-gNU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WnF-pG-XzL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vM-92-UR6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="修改手机号" id="yQI-Lz-sHM">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;返回" id="GLZ-fM-8hu">
+                                            <connections>
+                                                <action selector="backBarButtonItem:" destination="nX4-xC-GSb" id="woV-JI-vrf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入新的手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGY-jb-9LN">
+                                <rect key="frame" x="20" y="80" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aOy-J4-OB3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LxY-xh-lY8">
+                                <rect key="frame" x="20" y="130" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejW-iz-uNr">
+                                <rect key="frame" x="293" y="131.5" width="62" height="27"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="获取验证码">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="verificationButton:" destination="nX4-xC-GSb" eventType="touchUpInside" id="up2-op-a7J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96Q-ad-pDS">
+                                <rect key="frame" x="20" y="190" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.44705882352941173" green="0.8784313725490196" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="nX4-xC-GSb" eventType="touchUpInside" id="5Xh-ts-Cnc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gGY-jb-9LN" firstAttribute="leading" secondItem="WnF-pG-XzL" secondAttribute="leading" constant="20" id="1DL-JC-3dJ"/>
+                            <constraint firstItem="96Q-ad-pDS" firstAttribute="top" secondItem="LxY-xh-lY8" secondAttribute="bottom" constant="30" id="AOt-Nb-zhC"/>
+                            <constraint firstItem="gGY-jb-9LN" firstAttribute="top" secondItem="K31-N6-6Cc" secondAttribute="bottom" constant="60" id="FW1-H9-THi"/>
+                            <constraint firstItem="LxY-xh-lY8" firstAttribute="width" secondItem="gGY-jb-9LN" secondAttribute="width" id="Lei-Iy-H7c"/>
+                            <constraint firstItem="96Q-ad-pDS" firstAttribute="centerX" secondItem="WnF-pG-XzL" secondAttribute="centerX" id="N6k-1H-HuB"/>
+                            <constraint firstItem="96Q-ad-pDS" firstAttribute="leading" secondItem="WnF-pG-XzL" secondAttribute="leading" constant="20" id="OjC-05-d0n"/>
+                            <constraint firstAttribute="trailing" secondItem="ejW-iz-uNr" secondAttribute="trailing" constant="20" id="RZs-OC-TI9"/>
+                            <constraint firstItem="ejW-iz-uNr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WnF-pG-XzL" secondAttribute="leading" constant="20" symbolic="YES" id="SrH-qc-XSP"/>
+                            <constraint firstItem="LxY-xh-lY8" firstAttribute="top" secondItem="gGY-jb-9LN" secondAttribute="bottom" constant="20" id="ZSr-6a-7OS"/>
+                            <constraint firstItem="LxY-xh-lY8" firstAttribute="centerX" secondItem="gGY-jb-9LN" secondAttribute="centerX" id="dG7-y2-ERg"/>
+                            <constraint firstItem="ejW-iz-uNr" firstAttribute="centerY" secondItem="LxY-xh-lY8" secondAttribute="centerY" id="dsk-8B-aZr"/>
+                            <constraint firstItem="LxY-xh-lY8" firstAttribute="height" secondItem="gGY-jb-9LN" secondAttribute="height" id="frq-Lr-a3y"/>
+                            <constraint firstItem="gGY-jb-9LN" firstAttribute="centerX" secondItem="WnF-pG-XzL" secondAttribute="centerX" id="urt-8u-Urg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newPhoneNumberTextField" destination="gGY-jb-9LN" id="iB8-gx-SpI"/>
+                        <outlet property="saveButtonOutlet" destination="96Q-ad-pDS" id="4OX-Mc-VrF"/>
+                        <outlet property="verificationButtonOutlet" destination="ejW-iz-uNr" id="IvJ-ve-J2o"/>
+                        <outlet property="verifyCodeTextField" destination="LxY-xh-lY8" id="JXh-q0-3CH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrL-e1-2fT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1990" y="1672"/>
+        </scene>
         <!--Nickname Change View Controller-->
         <scene sceneID="sTr-Xb-Ftl">
             <objects>
@@ -821,7 +911,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oqf-3j-3F9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1892" y="1672"/>
+            <point key="canvasLocation" x="-1282" y="1672"/>
         </scene>
         <!--Persona Info View Controller-->
         <scene sceneID="a3c-6X-ttq">
@@ -867,7 +957,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHq-fk-hET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1218.4000000000001" y="1671.8140929535234"/>
+            <point key="canvasLocation" x="-575" y="1672"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="Rtv-Jv-lw1">
