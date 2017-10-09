@@ -11,7 +11,7 @@ import UIKit
 class feesPaymentViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
     
     let feesTypes = NSArray(objects: "物业费","水费","电费","公共能耗费","维修费","其他")
-    let images : [String] = ["物业费.png","水费.png","电费.png","小区.png","维修.png","其他.png"]
+    let images : [String] = ["物业费","水费","电费","小区","维修","其他"]
     @IBAction func backBarButtonItem(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }

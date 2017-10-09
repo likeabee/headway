@@ -32,8 +32,16 @@ class personalViewController: UIViewController , UITableViewDelegate , UITableVi
         
         personalHeaderView?.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: view.bounds.width, height: 200))
         personalHeaderView?.headImageButton.addTarget(self, action: #selector(self.headImageButtonClicked), for: UIControlEvents.touchUpInside)
-        
-        
+        let tool = dataStoreTool()
+        let newName = tool.getNormalDefult(key: "newName")
+        if(tool.isKeyPresentInUserDefaults(key: "newName")){
+            personalHeaderView?.nickNameLable.text = newName
+            print(newName!+"这是新的测试")
+            self.personalHeaderView?.addSubview((personalHeaderView?.nickNameLable)!)
+        }else{
+            personalHeaderView?.nickNameLable.text = "未设置昵称"
+            print("还没设置")
+        }
 //        personalHeaderView?.headImageButton.setBackgroundImage(self.getImage(), for: .normal)
         personalHeaderView?.imageView.image = getImage()
         personalHeaderView?.imageView.layer.cornerRadius = (personalHeaderView?.imageView.frame.width)! / 2

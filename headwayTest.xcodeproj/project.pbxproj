@@ -16,12 +16,6 @@
 		032806BF1F79E1D80026063A /* homePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806BE1F79E1D80026063A /* homePageViewController.swift */; };
 		032806C21F7A29A60026063A /* feesPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806C11F7A29A60026063A /* feesPaymentViewController.swift */; };
 		032806C41F7A371E0026063A /* feesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806C31F7A371E0026063A /* feesDetailViewController.swift */; };
-		032806DA1F7B37930026063A /* 电费.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D51F7B37930026063A /* 电费.png */; };
-		032806DB1F7B37930026063A /* 水费.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D61F7B37930026063A /* 水费.png */; };
-		032806DC1F7B37930026063A /* 维修.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D71F7B37930026063A /* 维修.png */; };
-		032806DD1F7B37930026063A /* 物业费.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D81F7B37930026063A /* 物业费.png */; };
-		032806DE1F7B37930026063A /* 小区.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806D91F7B37930026063A /* 小区.png */; };
-		032806E01F7B383F0026063A /* 其他.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806DF1F7B383F0026063A /* 其他.png */; };
 		032806E21F7B42AC0026063A /* TGDropBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806E11F7B42AC0026063A /* TGDropBoxView.swift */; };
 		032806E61F7B43890026063A /* paymentRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032806E51F7B43890026063A /* paymentRecordViewController.swift */; };
 		032806EA1F7B4D2A0026063A /* ic_more_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 032806E91F7B4D2A0026063A /* ic_more_down.png */; };
@@ -60,9 +54,6 @@
 		03A60D461F73C02C00BB50C3 /* delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A60D451F73C02C00BB50C3 /* delay.swift */; };
 		03A60D481F74E8D300BB50C3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A60D471F74E8D200BB50C3 /* SwiftyJSON.swift */; };
 		03A654AA1F70A6E400853303 /* BGimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03A654A91F70A6E400853303 /* BGimage.jpeg */; };
-		03A654B11F70B08C00853303 /* headwayLogo金.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A654AD1F70B08C00853303 /* headwayLogo金.png */; };
-		03A654B41F70B08C00853303 /* headwayLogo白.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A654B01F70B08C00853303 /* headwayLogo白.png */; };
-		03A654B61F70B10000853303 /* headwayLogo灰.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A654B51F70B10000853303 /* headwayLogo灰.png */; };
 		03A654BD1F70B9B600853303 /* StrokeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654BC1F70B9B500853303 /* StrokeAnimator.swift */; };
 		03A654C21F70C6D500853303 /* naghtsky.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A654C11F70C6D500853303 /* naghtsky.png */; };
 		03A654CB1F70E33F00853303 /* launchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A654C91F70E33F00853303 /* launchScreenViewController.swift */; };
@@ -177,12 +168,6 @@
 		032806BE1F79E1D80026063A /* homePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageViewController.swift; sourceTree = "<group>"; };
 		032806C11F7A29A60026063A /* feesPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feesPaymentViewController.swift; sourceTree = "<group>"; };
 		032806C31F7A371E0026063A /* feesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feesDetailViewController.swift; sourceTree = "<group>"; };
-		032806D51F7B37930026063A /* 电费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电费.png"; sourceTree = "<group>"; };
-		032806D61F7B37930026063A /* 水费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "水费.png"; sourceTree = "<group>"; };
-		032806D71F7B37930026063A /* 维修.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "维修.png"; sourceTree = "<group>"; };
-		032806D81F7B37930026063A /* 物业费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "物业费.png"; sourceTree = "<group>"; };
-		032806D91F7B37930026063A /* 小区.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "小区.png"; sourceTree = "<group>"; };
-		032806DF1F7B383F0026063A /* 其他.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他.png"; sourceTree = "<group>"; };
 		032806E11F7B42AC0026063A /* TGDropBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGDropBoxView.swift; sourceTree = "<group>"; };
 		032806E51F7B43890026063A /* paymentRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentRecordViewController.swift; sourceTree = "<group>"; };
 		032806E91F7B4D2A0026063A /* ic_more_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_more_down.png; sourceTree = "<group>"; };
@@ -227,9 +212,6 @@
 		03A60D451F73C02C00BB50C3 /* delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delay.swift; sourceTree = "<group>"; };
 		03A60D471F74E8D200BB50C3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		03A654A91F70A6E400853303 /* BGimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BGimage.jpeg; sourceTree = "<group>"; };
-		03A654AD1F70B08C00853303 /* headwayLogo金.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headwayLogo金.png"; sourceTree = "<group>"; };
-		03A654B01F70B08C00853303 /* headwayLogo白.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headwayLogo白.png"; sourceTree = "<group>"; };
-		03A654B51F70B10000853303 /* headwayLogo灰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headwayLogo灰.png"; sourceTree = "<group>"; };
 		03A654BC1F70B9B500853303 /* StrokeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAnimator.swift; sourceTree = "<group>"; };
 		03A654C11F70C6D500853303 /* naghtsky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = naghtsky.png; sourceTree = "<group>"; };
 		03A654C91F70E33F00853303 /* launchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = launchScreenViewController.swift; sourceTree = "<group>"; };
@@ -404,12 +386,6 @@
 				032806FC1F7C98C50026063A /* about_head_bg@2x.png */,
 				032806FA1F7C985F0026063A /* personal_bg.jpeg */,
 				032806E91F7B4D2A0026063A /* ic_more_down.png */,
-				032806DF1F7B383F0026063A /* 其他.png */,
-				032806D51F7B37930026063A /* 电费.png */,
-				032806D61F7B37930026063A /* 水费.png */,
-				032806D71F7B37930026063A /* 维修.png */,
-				032806D81F7B37930026063A /* 物业费.png */,
-				032806D91F7B37930026063A /* 小区.png */,
 				038DF9FD1F73A2DA000CCC17 /* 添加.png */,
 				038DF9EB1F739A1D000CCC17 /* 华元logo@180.png */,
 				038DF9EC1F739A1D000CCC17 /* 华元logo@87.png */,
@@ -423,9 +399,6 @@
 				038DF9DF1F735876000CCC17 /* owner_selected.png */,
 				038DF9E01F735876000CCC17 /* normal_selected.png */,
 				03A654C11F70C6D500853303 /* naghtsky.png */,
-				03A654B51F70B10000853303 /* headwayLogo灰.png */,
-				03A654AD1F70B08C00853303 /* headwayLogo金.png */,
-				03A654B01F70B08C00853303 /* headwayLogo白.png */,
 				03A654A91F70A6E400853303 /* BGimage.jpeg */,
 				03B204721F7CFAD200C3E5A2 /* 密码@32.png */,
 				03B204731F7CFAD200C3E5A2 /* 密码@64.png */,
@@ -731,35 +704,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				038DF9E31F735876000CCC17 /* owner_selected.png in Resources */,
-				03A654B11F70B08C00853303 /* headwayLogo金.png in Resources */,
 				038DF9E11F735876000CCC17 /* normal_default.png in Resources */,
-				032806DD1F7B37930026063A /* 物业费.png in Resources */,
-				03A654B41F70B08C00853303 /* headwayLogo白.png in Resources */,
 				03A60D441F73B65000BB50C3 /* r55.png in Resources */,
-				032806DA1F7B37930026063A /* 电费.png in Resources */,
 				038DF9F81F739A1D000CCC17 /* 华元logo@80.png in Resources */,
 				038DF9F51F739A1D000CCC17 /* 华元logo@40.png in Resources */,
 				03A654AA1F70A6E400853303 /* BGimage.jpeg in Resources */,
 				038DF9F41F739A1D000CCC17 /* 华元logo@120.png in Resources */,
 				03B204761F7CFAD200C3E5A2 /* 密码@32.png in Resources */,
 				038DF9F61F739A1D000CCC17 /* 华元logo@58.png in Resources */,
-				03A654B61F70B10000853303 /* headwayLogo灰.png in Resources */,
-				032806E01F7B383F0026063A /* 其他.png in Resources */,
 				038DF9F31F739A1D000CCC17 /* 华元logo@87.png in Resources */,
 				032807011F7CE0CD0026063A /* personalHeaderView.xib in Resources */,
 				03387AB31F6FA4E200DCF3AE /* LaunchScreen.storyboard in Resources */,
 				03A654CC1F70E33F00853303 /* launchScreenViewController.xib in Resources */,
 				03387AB01F6FA4E200DCF3AE /* Assets.xcassets in Resources */,
 				038DF9F71F739A1D000CCC17 /* 华元logo@60.png in Resources */,
-				032806DB1F7B37930026063A /* 水费.png in Resources */,
-				032806DC1F7B37930026063A /* 维修.png in Resources */,
 				03A60D401F73B27B00BB50C3 /* Default-667h@2x.png in Resources */,
 				03B204791F7CFAD200C3E5A2 /* 账号@64.png in Resources */,
 				032806FD1F7C98C50026063A /* about_head_bg@2x.png in Resources */,
 				03B204781F7CFAD200C3E5A2 /* 账号@32.png in Resources */,
 				038DF9E21F735876000CCC17 /* owner_default.png in Resources */,
 				038DF9F21F739A1D000CCC17 /* 华元logo@180.png in Resources */,
-				032806DE1F7B37930026063A /* 小区.png in Resources */,
 				038DF9FE1F73A2DA000CCC17 /* 添加.png in Resources */,
 				03387AAE1F6FA4E200DCF3AE /* Main.storyboard in Resources */,
 				032806FB1F7C985F0026063A /* personal_bg.jpeg in Resources */,

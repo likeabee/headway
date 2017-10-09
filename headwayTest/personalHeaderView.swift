@@ -12,6 +12,7 @@ class personalHeaderView: UIView {
     
     @IBOutlet weak var headImageButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nickNameLable: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
